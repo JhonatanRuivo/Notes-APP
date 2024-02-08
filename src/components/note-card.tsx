@@ -1,10 +1,10 @@
 export function Note() {
   return (
     <button
-      className="bg-gradient-to-t from-slate-800 to-gray-950 p-5 rounded-lg drop-shadow-xl w-[348px] h-[250px] text-start 
-    focus:ring-2 focus:ring-lime-400 hover:outline hover:outline-slate-400 hover:outline-2"
+      className=" text-left bg-slate-800 p-5 rounded-lg drop-shadow-xl w-auto h-[250px] outline-none
+    focus-visible:ring-2 focus-visible:ring-lime-400 hover:ring-2 hover:ring-slate-600 relative overflow-hidden"
     >
-      <div className="flex flex-col gap-3 align-top">
+      <div className="flex flex-col gap-3 h-full">
         <strong id="title" className="text-sm font-medium text-slate-300">
           há 2 dias
         </strong>
@@ -13,6 +13,7 @@ export function Note() {
           configurar o plugin, é preciso instalar como abaixo:
         </p>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/60 to-black/0 pointer-events-none"></div>
     </button>
   )
 }
